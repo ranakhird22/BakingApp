@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:name="android.example.bakingapp.DetailsFragment"
+        android:layout_height="match_parent"
+        android:layout_width="400dp"
+        android:id="@+id/MasterFragment"/>
+
+<View
+    android:layout_width="1dp"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"></View>
+
+    <LinearLayout
+        android:id="@+id/liner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="64dp"
+        android:paddingTop="16dp"
+        android:paddingRight="64dp"
+        android:paddingBottom="16dp">
+
+        <FrameLayout
+            android:id="@+id/descriptionFragment"
+            android:layout_width="505dp"
+            android:layout_height="256dp"
+            android:background="@android:color/darker_gray"
+            android:scaleType="centerInside">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/descriptionVideo"
+            android:layout_width="match_parent"
+            android:layout_height="308dp"
+            android:background="@android:color/darker_gray"
+            android:scaleType="centerInside">
+
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>
